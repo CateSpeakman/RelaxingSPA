@@ -1,0 +1,25 @@
+body{
+    background-color:#cc99ff;
+}
+
+#navbar{
+    background-color:#cc99ff;
+}
+
+.jumbotron{
+    height:5px;
+    background-color:#cc99ff;
+}
+
+
+.card{
+    top:40px;
+}
+
+/* .hidden { */
+    /* display: none;
+} */
+
+#candles{
+    display:20%;
+}
