@@ -11,55 +11,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.css">
-    <title>SPA Spa</title>
+    <title>Lilac Inn Spa</title>
 </head>
 
 
 
-<body class="container-fluid">
+<body>
     <!--nav bar-->
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                <a class="navbar-brand" href="#">SPA Spa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" id="homeNav" href="#">Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  id="servicesNav" href="#">View Services</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
- <!--End of Nav Bar -->       
-    <h1 class="jumbotron text-center">SPA Spa</h1>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <a class="navbar-brand" id="navbarTitle" href="#">Lilac Inn Spa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="homeNav" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="servicesNav" href="#">View Services</a>
+                </li>
+            </ul>
+            <img class="float-right" style="height:100px" src="images/lilac.jpg" alt="lilac branch">
+        </div>
+    </nav>
+    <!--End of Nav Bar -->
+    <h1 class="jumbotron text-center">Lilac Inn Spa</h1>
     <main>
         <div class="container text-center" id="homeDiv">
-            <h2>Welcome to SPA Spa. Please click on View Services to see what we have to offer you. </h2>
-            <img class ="rounded" id="candles" src="images/candles.jpg" alt="relaxing candles">
+            <h2>Welcome to Lilac Inn Spa</h2>
+            <p> Here at Lilac Inn Spa we understand the needs of rest and relaxation. We have several
+                services we offer to  please browse our services  </p>
+            <img class="rounded" id="candles" src="images/candles.jpg" alt="relaxing candles">
             <br />
         </div>
         <section>
             <!-- this section will contain the button to view all categories of the products-->
             <div class="container text-center">
                 <br />
-                <p><button type="button" id="viewCategoriesBtn">View Services</button></p>
-            </div>
+
         </section>
 
         <!-- this section will contain a hidden button that will contain dropdown list of categories to select from.  
         This will only appear once the user clicks on the View Categories Button-->
 
         <section id="categoryContainer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <form>
-                            <div class="dropdown">
+                    
+                   
+                            <div class="text-center">
+                                    <img src="images/spa.jpg" alt="spa candles">
+                            </div>
+                            <form>
+                            <div class="dropdown text-center mt-3">
+                              
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdownBtn"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
                                     Category</button>
@@ -68,19 +73,18 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
+                                 
         </section>
 
         <!-- this section will contain a hidden product list.  this will only appear once a user has selected a
         product category -->
+        <div class="container">
         <div class="row">
-            <section class="col-md-4" id="servicesContainer">
+            <section class="col-md-4 offset-2" id="servicesContainer">
                 <h3 id="categoryName">&nbsp;</h3>
                 <ul id="servicesList"></ul>
-            </section>
 
+            </section>
             <!-- this section will contain a bootstrap card to be displayed upon a product being selected from
         the above list-->
             <section class="col-md-4" id="serviceCardContainer">
@@ -95,6 +99,7 @@
                 </div>
 
             </section>
+        </div>
         </div>
     </main>
 

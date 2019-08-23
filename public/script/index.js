@@ -9,8 +9,8 @@ $(function () {
     //this function will call the JSON file and populate the table based on the call to 
     //restful API
 
-    $("#viewCategoriesBtn").on("click", getCategories);
-    $("#categoryDropdownBtn").hide();
+    //$("#categoryDropdownBtn").hide();
+    $("#categoryContainer").hide();
     $("#serviceCard").hide();
 
     let objs;
@@ -40,9 +40,9 @@ $(function () {
 
 $("#homeNav").on("click", () => {
     $("#homeDiv").show();
-    $("#viewCategoriesBtn").show();
+
     $("#viewCategoriesBtn").prop("disabled", false);
-    $("#categoryDropdownBtn").hide();
+    $("#categoryContainer").hide();
     $("#servicesContainer").hide();
     $("#serviceCard").hide();
 
@@ -50,10 +50,7 @@ $("#homeNav").on("click", () => {
 
 $("#servicesNav").on("click", () => {
     $("#homeDiv").hide();
-    
-    $("#viewCategoriesBtn").hide();
     $("#servicesContainer").hide();
-    //$("#serviceCard").hide();
     getCategories();
 
 });//ends services Nav onclick function
@@ -65,8 +62,10 @@ function getCategories() {
     //the button for Select a category
 
     $("#homeDiv").hide();
-    $("#viewCategoriesBtn").prop("disabled", true);
-    $("#categoryDropdownBtn").show();
+   // $("#categoryDropdownBtn").show();
+   $("#categoryContainer").show();
+   
+
 
 }//ends getCategories function
 
@@ -100,9 +99,7 @@ function getServicesList(category) {
 
 function getService(service) {
     //this will show the card for the service that was selected from the list
-    // $("#serviceCardContainer").show();
-    //$("#serviceCard").hide();
-    //$("#serviceCard").empty();
+
 
     $.getJSON("/api/services/" + service, function (service) {
         $("#cardTitle").html(service.ServiceName);
