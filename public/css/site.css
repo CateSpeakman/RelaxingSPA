@@ -3,22 +3,38 @@ body{
 }
 
 #navbar{
-    background-color:#cc99ff;
+    background-color:#8c1aff;
+    height:120px;
 }
 
 .jumbotron{
-    height:5px;
+    height:75px;
     background-color:#cc99ff;
 }
 
+#navbarTitle{
+    font-size:2.0em;
+    color:white;
+
+}
+
+#homeNav{
+    font-size:1.0em;
+
+}
+
+#servicesNav{
+    font-size:1.0em;
+
+}
+
+nav li{
+    background-color:white;
+}
 
 .card{
     top:40px;
 }
-
-/* .hidden { */
-    /* display: none;
-} */
 
 #candles{
     display:20%;
