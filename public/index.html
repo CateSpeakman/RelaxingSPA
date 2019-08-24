@@ -14,8 +14,6 @@
     <title>Lilac Inn Spa</title>
 </head>
 
-
-
 <body>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
@@ -37,69 +35,61 @@
         </div>
     </nav>
     <!--End of Nav Bar -->
-    <h1 class="jumbotron text-center">Lilac Inn Spa</h1>
+    <h1 class="jumbotron text-center homepara">Lilac Inn Spa</h1>
     <main>
         <div class="container text-center" id="homeDiv">
-            <h2>Welcome to Lilac Inn Spa</h2>
-            <p> Here at Lilac Inn Spa we understand the needs of rest and relaxation. We have several
-                services we offer to  please browse our services  </p>
+            <h2 class="homepara">Welcome to Lilac Inn Spa</h2>
+            <p class="homepara"> Here at Lilac Inn Spa we understand the needs of rest and relaxation. We have several
+                services we offer our clients. From massages to facials to even acupucture, we have
+                something for everyone. Browse our services and let us help you relax! </p>
             <img class="rounded" id="candles" src="images/candles.jpg" alt="relaxing candles">
             <br />
         </div>
-        <section>
-            <!-- this section will contain the button to view all categories of the products-->
-            <div class="container text-center">
-                <br />
-
-        </section>
 
         <!-- this section will contain a hidden button that will contain dropdown list of categories to select from.  
-        This will only appear once the user clicks on the View Categories Button-->
+        This will only appear once the user clicks on the View Services within the Nav Bar-->
 
         <section id="categoryContainer">
-                    
-                   
-                            <div class="text-center">
-                                    <img src="images/spa.jpg" alt="spa candles">
-                            </div>
-                            <form>
-                            <div class="dropdown text-center mt-3">
-                              
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdownBtn"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
-                                    Category</button>
-                                <div class="dropdown-menu" id="categoryList" aria-labelledby="categoryDropdownBtn">
-                                    <!-- this will be populated by Javascript-->
-                                </div>
-                            </div>
-                        </form>
-                                 
-        </section>
-
-        <!-- this section will contain a hidden product list.  this will only appear once a user has selected a
-        product category -->
-        <div class="container">
-        <div class="row">
-            <section class="col-md-4 offset-2" id="servicesContainer">
-                <h3 id="categoryName">&nbsp;</h3>
-                <ul id="servicesList"></ul>
-
-            </section>
-            <!-- this section will contain a bootstrap card to be displayed upon a product being selected from
-        the above list-->
-            <section class="col-md-4" id="serviceCardContainer">
-                <div id="serviceCard" class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h4 class="card-title" id="cardTitle">&nbsp;</h4>
-                        <p class="card-text" id="cardText1">&nbsp;</p>
-                        <p class="card-text" id="cardText2">&nbsp;</p>
-                        <p class="card-text" id="cardText3">&nbsp;</p>
-                        <p class="card-text" id="cardText4">&nbsp;</p>
+            <div class="text-center">
+                <img src="images/spa.jpg" alt="spa candles">
+            </div>
+            <form id="categoryDropdown" name="categoryDropdown">
+                <div class="dropdown text-center mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdownBtn"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
+                        Category</button>
+                    <!-- below line does not pass dynamic validation but does for regular validation.
+                                          all styling is from bootstrap-->
+                    <div class="dropdown-menu" id="categoryList" aria-labelledby="categoryDropdownBtn">
+                        <!-- this will be populated by Javascript-->
                     </div>
                 </div>
+            </form>
+        </section>
 
-            </section>
-        </div>
+        <!-- this section will contain a hidden service list.  this will only appear once a user has selected a
+        service category -->
+        <div class="container">
+            <div class="row">
+                <section class="col-md-4 offset-2" id="servicesContainer">
+                    <h3 id="categoryName">&nbsp;</h3>
+                    <ul id="servicesList"></ul>
+                </section>
+
+                <!-- this section will contain a bootstrap card to be displayed upon a service being selected from
+        the above list-->
+                <section class="col-md-4" id="serviceCardContainer">
+                    <div id="serviceCard" class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h4 class="card-title" id="cardTitle">&nbsp;</h4>
+                            <p class="card-text" id="cardText1">&nbsp;</p>
+                            <p class="card-text" id="cardText2">&nbsp;</p>
+                            <p class="card-text" id="cardText3">&nbsp;</p>
+                            <p class="card-text" id="cardText4">&nbsp;</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 

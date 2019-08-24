@@ -6,10 +6,10 @@
 
 $(function () {
 
-    //this function will call the JSON file and populate the table based on the call to 
+    //this function will call the JSON file and populate the dropdown based on the call to 
     //restful API
 
-    //$("#categoryDropdownBtn").hide();
+
     $("#categoryContainer").hide();
     $("#serviceCard").hide();
 
@@ -58,17 +58,17 @@ $("#servicesNav").on("click", () => {
 
 function getCategories() {
 
-    //this function will populate the categories on the click of the view categories button and display 
+    //this function will populate the categories on the click of the view services on nav bar and display 
     //the button for Select a category
 
     $("#homeDiv").hide();
-   // $("#categoryDropdownBtn").show();
-   $("#categoryContainer").show();
-   
+    $("#categoryContainer").show();
+
 
 
 }//ends getCategories function
 
+// this function will populate the list of related services based on the category that is selected
 
 function getServicesList(category) {
     $("#servicesList").empty();
@@ -97,11 +97,12 @@ function getServicesList(category) {
 
 }//ends getServices function
 
+//this will show the card for the service that was selected from the list
+
+
 function getService(service) {
-    //this will show the card for the service that was selected from the list
 
-
-    $.getJSON("/api/services/" + service, function (service) {
+        $.getJSON("/api/services/" + service, function (service) {
         $("#cardTitle").html(service.ServiceName);
         $("#cardText1").html("Service type: " + service.CategoryName);
         $("#cardText2").html("Description: " + service.Description);

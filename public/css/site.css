@@ -33,9 +33,11 @@ nav li{
 }
 
 .card{
-    top:40px;
+    top:30px;
+    height:285px;
 }
 
-#candles{
-    display:20%;
+.homefont{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
 }
