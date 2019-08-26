@@ -3,16 +3,16 @@
  RelaxingSPA is a single page application for a business that would offer spa services.  In this case the business is called Lilac Inn Spa.  This application will allow a user  to view categories of services offered.  From there the user would be able to select a category and view all related services.  The user will be able to select a service and obtain more details regarding that particular service. Screenshots are provided below.
  
  Home Page
- ![Screen-Shot](images/home.jpg?raw=true "Screen-Shot")
+ ![Screen-Shot](/public/images/home.jpg?raw=true "Screen-Shot")
  
  Selecting a Service Category
- ![Screen-Shot](images/selectCategory.jpg?raw=true "Screen-Shot")
+ ![Screen-Shot](/public/images/selectCategory.jpg?raw=true "Screen-Shot")
  
  Viewing Related Services
- ![Screen-Shot](images/serviceSelection.jpg?raw=true "Screen-Shot")
+ ![Screen-Shot](/public/images/serviceSelection.jpg?raw=true "Screen-Shot")
  
  Service Description
- ![Screen-Shot](images/serviceInfo.jpg?raw=true "Screen-Shot")
+ ![Screen-Shot](/public/images/serviceInfo.jpg?raw=true "Screen-Shot")
 
 
 # Audience
